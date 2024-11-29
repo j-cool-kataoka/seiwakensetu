@@ -1,0 +1,58 @@
+@use "../Global/" as *;
+
+.p-top {
+    &__mv {
+        background: url(../images/top_mv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        max-height: 1080px;
+
+        @include MQ(md) {
+            background: url(../images/top_mv.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-height: 844px;
+        }
+    }
+
+    &__mv--wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    &__mv--heading {
+        max-width: 712px;
+        position: absolute;
+        bottom: 150px;
+        left: 30px;
+
+        @include MQ(md) {
+            left: auto;
+            bottom: 50px;
+            width: 100%;
+        }
+        img {
+            max-width: 456px;
+
+            @include MQ(md) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__mv--text {
+        font-family: $font-family-serif;
+        font-size: rem(36);
+        font-weight: 700;
+        color: var(--white);
+        margin-top: 20px;
+
+        @include MQ(md) {
+            font-size: rem(24);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use "../Global/" as *;
+
+.c-heading {
+
+    &__en {
+        font-size: rem(128);
+        font-weight: 400;
+        font-family: $font-family-sorts;
+    }
+
+    &__title {
+        font-size: rem(32);
+        font-weight: 600;
+        font-family: $font-family-serif;
+    }
+}

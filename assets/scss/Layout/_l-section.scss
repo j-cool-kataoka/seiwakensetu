@@ -1,0 +1,9 @@
+@use '../Global/' as *;
+
+.l-section {
+    margin-top: 150px;
+
+    @include MQ(md) {
+        margin-top: 75px;
+    }
+}
