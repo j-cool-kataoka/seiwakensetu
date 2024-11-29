@@ -74,17 +74,17 @@
 }
 
 .u-pc {
-    display: block !important;
+    display: block;
 
     @include MQ(md) {
-        display: none !important;
+        display: none;
     }
 }
 
 .u-sp {
-    display: none !important;
+    display: none;
 
     @include MQ(md) {
-        display: block !important;
+        display: block;
     }
 }
