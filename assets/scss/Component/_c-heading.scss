@@ -1,16 +1,35 @@
 @use "../Global/" as *;
 
 .c-heading {
+    width: fit-content;
+    margin-bottom: 70px;
+
+    @include MQ(md) {
+        margin-bottom: 50px;
+    }
 
     &__en {
         font-size: rem(128);
         font-weight: 400;
         font-family: $font-family-sorts;
+        color: rgba(1,31,97,0.1);
+
+        @include MQ(md) {
+            font-size: rem(64);
+        }
     }
 
     &__title {
         font-size: rem(32);
         font-weight: 600;
         font-family: $font-family-serif;
+        color: var(--blue);
+        text-align: right;
+        margin-top: -72px;
+
+        @include MQ(md) {
+            font-size: rem(24);
+            margin-top: -40px;
+        }
     }
 }
