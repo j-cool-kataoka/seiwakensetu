@@ -1,9 +1,13 @@
 @use '../Global/' as *;
 
-.l-section {
+.l-section-top {
     margin-top: 150px;
 
     @include MQ(md) {
         margin-top: 75px;
+    }
+
+    &:first-of-type {
+        margin-top: 0;
     }
 }

@@ -31,13 +31,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  background-color: var(--white);
-  color: var(--black-dark2);
-}
-
-main {
-  background-color: var(--blue-light2);
+  color: var(--black);
 }
 
 ul {
@@ -69,6 +63,7 @@ address {
 img {
   vertical-align: top;
   width: 100%;
+  height: 100%;
 }
 
 input[type="text"]:focus,

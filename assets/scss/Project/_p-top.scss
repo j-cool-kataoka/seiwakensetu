@@ -29,9 +29,11 @@
         left: 30px;
 
         @include MQ(md) {
-            left: auto;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 50px;
             width: 100%;
+            padding: 0 27px;
         }
         img {
             max-width: 456px;
@@ -53,6 +55,206 @@
         @include MQ(md) {
             font-size: rem(24);
             text-align: center;
+        }
+    }
+
+    &__concept--media {
+        display: flex;
+        justify-content: space-between;
+
+        @include MQ(md) {
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    &__concept--body {
+        margin-right: 43px;
+
+        @include MQ(md) {
+            margin-right: 0;
+        }
+    }
+
+    &__concept--images {
+        max-width: 488px;
+        width: 50%;
+        margin-top: -46px;
+
+        @include MQ(md) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__concept--title {
+        @include MQ(md) {
+            text-align: center;
+            font-size: (16);
+        }
+    }
+
+    &__concept--text {
+        margin-top: 40px;
+
+        @include MQ(md) {
+            margin-top: 30px;
+            font-size: (12);
+        }
+    }
+
+    &__button--concept {
+        margin-top: 40px;
+
+        @include MQ(md) {
+            margin-top: 30px;
+        }
+    }
+
+    &__service--list {
+        display: flex;
+        justify-content: space-between;
+
+        @include MQ(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__service--item {
+        width: calc(100%/3);
+        background: url(../images/top_service01.jpg) no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 28px 32px;
+        position: relative;
+
+        @include MQ(md) {
+            min-height: 150px;
+            width: 100%;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-top: 260px solid transparent;
+            border-bottom: 0 solid transparent;
+            border-right: 400px solid rgba(1,31,97,0.7);
+            border-left: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            @include MQ(xxxl) {
+                border-top: 260px solid transparent;
+                border-right: 23vw solid rgba(1,31,97,0.7);
+            }
+            @include MQ(md) {
+                border-top: 114px solid transparent;
+                border-right: 47vw solid rgba(1,31,97,0.7);
+            }
+        }
+    }
+
+    &__service--item01 {
+        background: url(../images/top_service01.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__service--item02 {
+        background: url(../images/top_service02.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__service--item03 {
+        background: url(../images/top_service03.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__service--title {
+        color: var(--white);
+        font-size: rem(24);
+        font-family: $font-family-serif;
+        font-weight: 700;
+        z-index: 1;
+
+        @include MQ(xxl) {
+            font-size: rem(14);
+        }
+    }
+
+    &__service--en {
+        font-size: rem(64);
+        font-weight: 400;
+        font-family: $font-family-sorts;
+        color: var(--white);
+        z-index: 1;
+
+        @include MQ(xxl) {
+            font-size: rem(28);
+        }
+    }
+
+    &__service--link {
+        color: var(--white);
+        font-size: rem(24);
+        font-family: $font-family-serif;
+        font-weight: 700;
+        z-index: 1;
+        padding-right: 2em;
+        position: relative;
+
+        @include MQ(xxl) {
+            font-size: rem(14);
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            color: var(--white);
+            width: 1em;
+            height: 1px;
+            background: var(--white);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: .5em;
+            height: .5em;
+            border: 1px solid var(--white);
+            border-left: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+            transform-origin: top right;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+        &:hover {
+            transition: all 0.5s;
+        }
+
+        &:hover::before {
+            width: 2em;
+            transition: all 0.5s;
+            right: -1em;
+        }
+
+        &:hover::after {
+            transition: all 0.5s;
+            right: -1em;
         }
     }
 }
