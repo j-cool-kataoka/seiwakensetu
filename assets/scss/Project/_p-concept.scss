@@ -1,0 +1,140 @@
+@use "../Global/" as *;
+
+.p-concept {
+    overflow: hidden;
+    
+    &__lead {
+        font-size: rem(32);
+        font-weight: 700;
+        font-family: $font-family-serif;
+        text-align: center;
+
+        @include MQ(md) {
+            font-size: rem(24);
+        }
+    }
+
+    &__media {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+
+        @include MQ(lg) {
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @include MQ(lg) {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            @include MQ(lg) {
+                flex-direction: column;
+            }
+
+            .p-concept__media--images {
+                width: 54vw;
+                padding-left: 110px;
+                padding-right: 0;
+                position: relative;
+                margin-right: calc(50% - 50vw);
+                margin-left: 0;
+
+                @include MQ(xxxl) {
+                    padding-left: 3vw;
+                }
+                @include MQ(lg) {
+                    width: auto;
+                    padding-left: 0;
+                }
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--dark-blue);
+                    border-radius: 0 0 0 20px;
+                    position: absolute;
+                    right: -82px;
+                    left: auto;
+                    bottom: -35px;
+                    z-index: -1;
+
+                    @include MQ(lg) {
+                        right: -20px;
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__media--images {
+        width: 54vw;
+        padding-right: 110px;
+        position: relative;
+        margin-left: calc(50% - 50vw);
+
+        @include MQ(xxxl) {
+            padding-right: 3vw;
+        }
+        @include MQ(lg) {
+            width: auto;
+            padding-right: 0;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark-blue);
+            border-radius: 0 0 20px 0;
+            position: absolute;
+            left: -82px;
+            bottom: -35px;
+            z-index: -1;
+
+            @include MQ(lg) {
+                left: -20px;
+                bottom: -20px;
+            }
+        }
+    }
+
+    &__media--body {
+        width: 50%;
+
+        @include MQ(lg) {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    &__media--title {
+        font-size: rem(32);
+        font-family: $font-family-serif;
+        font-weight: 700;
+
+        @include MQ(lg) {
+            font-size: rem(24);
+        }
+    }
+
+    &__media--text {
+        font-weight: 400;
+        margin-top: 30px;
+
+        @include MQ(lg) {
+            margin-top: 10px;
+        }
+    }
+}

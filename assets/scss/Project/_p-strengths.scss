@@ -1,0 +1,120 @@
+@use "../Global/" as *;
+
+.p-strengths {
+
+    &__top {
+        margin-top: 75px;
+
+        @include MQ(md) {
+            margin-top: 50px;
+        }
+    }
+    
+    &__title {
+        font-size: rem(32);
+        font-weight: 700;
+        font-family: $font-family-serif;
+        text-align: center;
+
+        @include MQ(md) {
+            font-size: rem(24);
+        }
+    }
+
+    &__lead {
+        font-size: rem(24);
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+
+        @include MQ(md) {
+            font-size: rem(16);
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include MQ(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        margin-right: 105px;
+        width: calc(100%/3);
+        min-height: 450px;
+        padding: 36px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @include MQ(xxxl) {
+            margin-right: 2vw;
+        }
+        @include MQ(lg) {
+            width: 100%;
+            margin-right: 0;
+            min-height: 350px;
+            margin-bottom: 50px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item--title {
+        text-align: center;
+        color: var(--white);
+        font-size: rem(24);
+        font-weight: 700;
+
+        @include MQ(md) {
+            font-size: rem(16);
+        }
+    }
+
+    &__item--text {
+        font-weight: 700;
+        color: var(--white);
+        margin-top: 10px;
+    }
+
+    &__item01 {
+        background: url(../images/strengths01.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__item02 {
+        background: url(../images/strengths02.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__item03 {
+        background: url(../images/strengths03.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &__button {
+        margin-top: 24px;
+
+        @include MQ(md) {
+            margin-top: 15px;
+        }
+
+        .c-button__link {
+            border: 1px solid var(--white);
+        }
+        .c-button__link:hover {
+            border: 1px solid var(--orange);
+        }
+    }
+}

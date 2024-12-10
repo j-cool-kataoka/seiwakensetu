@@ -80,6 +80,7 @@
         max-width: 488px;
         width: 50%;
         margin-top: -46px;
+        height: 100%;
 
         @include MQ(md) {
             width: 100%;
@@ -256,5 +257,281 @@
             transition: all 0.5s;
             right: -1em;
         }
+    }
+
+    &__attempt {
+        margin-bottom: 250px;
+
+        @include MQ(lg) {
+            margin-bottom: 150px;
+        }
+    }
+
+    &__attempt--media {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 200px;
+
+        @include MQ(lg) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 75px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__attempt--images {
+        width: 55%;
+        max-width: 800px;
+        position: relative;
+
+        @include MQ(lg) {
+            width: 100%;
+            max-width: none;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 72vw;
+            height: 100%;
+            background-color: rgba(1, 31, 97, 0.25);
+            border-radius: 0 20px 20px 0;
+            position: absolute;
+            left: 0;
+            bottom: -125px;
+            z-index: -1;
+            margin-left: calc(50% - 50vw);
+            max-width: 1470px;
+
+            @include MQ(lg) {
+                bottom: auto;
+                top: 50px;
+                left: -26px;
+            }
+            @include MQ(md) {
+                bottom: auto;
+                border-radius: 0;
+            }
+        }
+
+        img {
+            height: 500px;
+            object-fit: cover;
+            object-position: left;
+            border-radius: 20px;
+
+            @include MQ(lg) {
+                height: auto;
+            }
+            @include MQ(md) {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__attempt--body {
+        width: 45%;
+        margin-left: 123px;
+
+        @include MQ(xxxl) {
+            margin-left: 3vw;
+        }
+        @include MQ(lg) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 134px;
+        }
+    }
+
+    &__attempt--title {
+        font-size: rem(24);
+        padding-left: 88px;
+        font-weight: 700;
+        font-family: $font-family-serif;
+        position: relative;
+
+        @include MQ(md) {
+            font-size: (24);
+        }
+
+        &::before {
+            content: '01';
+            display: inline-block;
+            font-size: rem(72);
+            font-weight: 400;
+            font-family: $font-family-serif;
+            color: rgba(1,31,97,0.1);
+            position: absolute;
+            left: 0;
+            top: -76px;
+
+            @include MQ(md) {
+                font-size: (48);
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            background-color: rgba(1, 31, 97, 0.1);
+            width: 1px;
+            height: 70px;
+            transform: rotate(32deg);
+            position: absolute;
+            left: 73px;
+            top: -31px;
+        }
+    }
+
+    &__attempt--text {
+        margin-top: 60px;
+        font-size: rem(16);
+
+        @include MQ(md) {
+            margin-top: 25px;
+            font-size: rem(12);
+        }
+    }
+
+    &__attempt--button {
+        margin-top: 35px;
+
+        @include MQ(md) {
+            margin-top: 20px;
+        }
+    }
+
+    &__attempt--media02 {
+        flex-direction: row-reverse;
+
+        @include MQ(lg) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p-top__attempt--body {
+            margin-left: 0;
+            margin-right: 123px;
+    
+            @include MQ(xxxl) {
+                margin-left: 0;
+                margin-right: 3vw;
+            }
+            @include MQ(lg) {
+                margin-right: 0;
+            }
+        }
+
+        .p-top__attempt--images {
+            &::before {
+                background-color:rgba(1,31,97,0.50);
+                border-radius: 20px 0 0 20px;
+                position: absolute;
+                left: auto;
+                right: 0;
+                bottom: -125px;
+                margin-right: calc(50% - 50vw);
+                margin-left: auto;
+                max-width: 1470px;
+
+                @include MQ(lg) {
+                    bottom: auto;
+                    top: 50px;
+                    right: -26px;
+                }
+            }
+        }
+
+        .p-top__attempt--title {
+            &::before {
+                content: '02';
+            }
+        }
+    }
+
+    &__attempt--media03 {
+        .p-top__attempt--images {
+            &::before {
+                background-color:rgba(1,31,97,0.75);
+            }
+        }
+
+        .p-top__attempt--title {
+            &::before {
+                content: '03';
+            }
+        }
+    }
+
+    &__company--wrapper {
+        background-color: rgba(1,31,97,0.1);
+        padding: 80px 100px;
+        border-radius: 200px 0 0 0;
+        margin-right: calc(50% - 50vw);
+
+        @include MQ(xxxl) {
+            padding: 2vw 3vw;
+        }
+        @include MQ(lg) {
+            padding: 78px 46px;
+        }
+    }
+
+    &__company--col3 {
+        display: flex;
+        margin-left: -100px;
+
+        @include MQ(xxxl) {
+            margin-left: -2vw;
+        }
+        @include MQ(lg) {
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+    &__company--card {
+        padding-left: 100px;
+        width: calc(100%/3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include MQ(xxxl) {
+            padding-left: 2vw;
+        }
+        @include MQ(lg) {
+            padding-left: 0;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        &:last-child {
+            @include MQ(lg) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__company--title {
+        margin-top: 35px;
+        font-size: rem(24);
+        font-weight: 700;
+    }
+
+    &__company--text {
+        margin-top: 35px;
+    }
+
+    &__company--button {
+        margin-top: 35px;
     }
 }
