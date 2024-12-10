@@ -1,0 +1,40 @@
+@use "../Global/" as *;
+
+.c-breadcrumb {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    @include MQ(md) {
+        padding: 12px 20px;
+    }
+
+    &__link {
+        padding: 0 20px;
+        color: var(--white);
+        font-weight: 700;
+        position: relative;
+
+        @include MQ(md) {
+            border-radius: 0 0 20px 0;
+            font-size: rem(10);
+            padding: 0 10px;
+        }
+
+        &::after {
+            content: '>';
+            color: var(--white);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:first-of-type {
+            font-weight: 400;
+        }
+        &:last-child::after {
+            content: none;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@use "../Global/" as *;
+
+.c-mv {
+    position: relative;
+    
+    &__inner {
+        background-color: var(--dark-blue);
+        margin-right: calc(50% - 50vw);
+        padding-right: 80px;
+        border-radius: 0 0 0 50px;
+
+        @include MQ(md) {
+            padding-right: 26px;
+            border-radius: 0 0 0 20px;
+        }
+    }
+
+    &__images {
+        height: 350px;
+        object-fit: cover;
+        margin-left: calc(50% - 50vw);
+        border-radius: 0 0 50px 0;
+
+        @include MQ(md) {
+            border-radius: 0 0 20px 0;
+            height: 130px;
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__title {
+        font-size: rem(16);
+        font-weight: 700;
+        font-family: $font-family-serif;
+
+        @include MQ(md) {
+            font-size: rem(12);
+        }
+    }
+
+    &__en {
+        font-size: rem(64);
+        font-weight: 400;
+        font-family: $font-family-sorts;
+        margin-top: -14px;
+
+        @include MQ(md) {
+            font-size: rem(32);
+        }
+    }
+}
