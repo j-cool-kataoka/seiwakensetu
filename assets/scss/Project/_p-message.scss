@@ -1,0 +1,96 @@
+@use "../Global/" as *;
+
+.p-message {
+    margin-top: 75px;
+
+    @include MQ(md) {
+        margin-top: 50px;
+    }
+}
+
+.p-message__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+
+    @include MQ(md) {
+        font-size: rem(24);
+        text-align: center;
+    }
+}
+
+.p-message__lead {
+    margin-top: 75px;
+    font-size: rem(32);
+    line-height: 1.25;
+
+    @include MQ(lg) {
+        font-size: rem(28);
+    }
+
+    @include MQ(md) {
+        margin-top: 50px;
+        font-size: rem(24);
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    br {
+        display: none;
+
+        @include MQ(md) {
+            display: block;
+        }
+    }
+}
+
+.p-message__image {
+    margin-top: 30px;
+
+    @include MQ(md) {
+        margin-top: 50px;
+        width: 100vw;
+        margin-left: -24px;
+    }
+}
+
+.p-message__heading {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.p-message__position {
+    font-size: rem(14);
+    line-height: 1.4;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(10);
+    }
+}
+
+.p-message__name {
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-message__text {
+    margin-top: 25px;
+    font-size: rem(16);
+    line-height: 1.875;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(12);
+        line-height: 1.8;
+    }
+}
+

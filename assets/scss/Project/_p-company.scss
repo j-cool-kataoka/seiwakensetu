@@ -172,7 +172,7 @@
 
     @include MQ(md) {
         margin-top: 50px;
-        padding-block: 36.5px;
+        padding-block: 36.5px 14px;
         row-gap: 50px;
     }
 }
