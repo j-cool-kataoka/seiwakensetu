@@ -1759,6 +1759,108 @@ input[type=checkbox]:not(:checked) {
   border: 1px solid var(--orange);
 }
 
+.p-message {
+  margin-top: 75px;
+}
+@media screen and (max-width: 768px) {
+  .p-message {
+    margin-top: 50px;
+  }
+}
+
+.p-message__title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .p-message__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.p-message__lead {
+  margin-top: 75px;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+@media screen and (max-width: 992px) {
+  .p-message__lead {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-message__lead {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+}
+.p-message__lead br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .p-message__lead br {
+    display: block;
+  }
+}
+
+.p-message__image {
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .p-message__image {
+    margin-top: 50px;
+    width: 100vw;
+    margin-left: -24px;
+  }
+}
+
+.p-message__heading {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.p-message__position {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  .p-message__position {
+    font-size: 0.625rem;
+  }
+}
+
+.p-message__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  .p-message__name {
+    font-size: 1rem;
+  }
+}
+
+.p-message__text {
+  margin-top: 25px;
+  font-size: 1rem;
+  line-height: 1.875;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  .p-message__text {
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+}
+
 .p-company {
   margin-top: 75px;
 }
@@ -1942,7 +2044,7 @@ input[type=checkbox]:not(:checked) {
 @media screen and (max-width: 768px) {
   .p-company-history__list {
     margin-top: 50px;
-    padding-block: 36.5px;
+    padding-block: 36.5px 14px;
     row-gap: 50px;
   }
 }
