@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/hamburger.js" defer></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+
+            <button class="l-header__button js-hamburger" aria-label="メニューの開閉ボタン">
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+            </button>
+            <div class="l-header__wrapper js-nav">
+                <img src="/assets/images/header_bg.png" alt="" class="u-pc l-header__bg">
+                <img src="/assets/images/header_bg_sp.png" alt="" class="u-sp l-header__bg">
+                <div class="l-header__wrapper--inner">
+                    <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+                    <p class="l-header__name">SKYLAB株式会社</p>
+                    <nav class="l-header__nav">
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">サービス</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンサルティング</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">ドローン</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">イベント・講習会</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">会社について</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">会社概要</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">代表挨拶</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンセプト</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">弊社の強み</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">その他</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">採用情報</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="c-mv l-wrapper c-mv__wrapper">
+            <div class="c-mv__inner">
+                <img src="/assets/images/contact_mv.png" alt="" class="c-mv__images u-pc">
+                <img src="/assets/images/contact_mv_sp.png" alt="" class="c-mv__images u-sp">
+                <div class="c-mv__heading">
+                    <h1 class="c-mv__title">お問い合わせ</h1>
+                    <p class="c-mv__en">Contact</p>
+                </div>
+                <div class="c-breadcrumb">
+                    <a href="/" class="c-breadcrumb__link">HOME</a>
+                    <a href="#" class="c-breadcrumb__link">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="l-section p-contact">
+            <div class="l-wrapper-sm">
+                <h2 class="p-contact__title">お問い合わせ</h2>
+                <p class="p-contact__lead">内容を確認の上、担当よりご連絡いたします。</p>
+                <div class="p-contact-tel">
+                    <p class="p-contact-tel__text">お急ぎの方はお電話にて<br>お問い合わせください</p>
+                    <a href="tel:0790232727" class="p-contact-tel__number">0790-23-2727</a>
+                    <p class="p-contact-tel__time">受付時間　9:00〜17:00　定休日：日・祝</p>
+                </div>
+
+                <form action="" class="p-contact-form">
+                    <div class="p-contact-form__item">
+                        <p class="p-contact-form__label">
+                            お問い合わせ項目
+                            <span class="p-contact-form__required">必須</span>
+                        </p>
+                        <div class="p-contact-form__rows">
+                            <label for="business" class="p-contact-form__radio">
+                                <input type="radio" id="business" name="contact-item" class="p-contact-form__radio-input">
+                                事業について
+                            </label>
+                            <label for="recruitment" class="p-contact-form__radio">
+                                <input type="radio" id="recruitment" name="contact-item" class="p-contact-form__radio-input">
+                                採用について
+                            </label>
+                            <label for="other" class="p-contact-form__radio">
+                                <input type="radio" id="other" name="contact-item" class="p-contact-form__radio-input">
+                                その他
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="name" class="p-contact-form__label">
+                            氏名
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="name" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="ruby" class="p-contact-form__label">
+                            ふりがな
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="ruby" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="phone" class="p-contact-form__label">
+                            電話番号
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="phone" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="email" class="p-contact-form__label">
+                            メールアドレス
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="email" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="company" class="p-contact-form__label">
+                            会社名
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="company" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="address" class="p-contact-form__label">
+                            所在地
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <input type="text" id="address" class="p-contact-form__input">
+                    </div>
+                    <div class="p-contact-form__item">
+                        <label for="message" class="p-contact-form__label">
+                            お問い合わせ内容
+                            <span class="p-contact-form__required">必須</span>
+                        </label>
+                        <textarea id="message" class="p-contact-form__textarea"></textarea>
+                    </div>
+                
+                    <div class="p-contact-privacy">
+                        <div class="p-contact-privacy__box">
+                            <p class="p-contact-privacy__lead">プライバシーポリシー</p>
+                            <p class="p-contact-privacy__text">SKYLAB株式会社（以下「弊社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</p>
+                            <p class="p-contact-privacy__title">個人情報の管理</p>
+                            <p class="p-contact-privacy__text">弊社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。弊社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p>
+                        </div>
+                        <label for="privacy-policy" class="p-contact-privacy__label">
+                            <input type="checkbox" id="privacy-policy" class="p-contact-privacy__checkbox">
+                            プライバシーポリシーに同意しました
+                        </label>
+                    </div>
+                
+                    <div class="c-button p-contact-form__button">
+                        <button class="c-button__link">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
