@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/hamburger.js" defer></script>
+    <script src="/assets/js/slider.js" defer></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css
+    " rel="stylesheet">
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+
+            <button class="l-header__button js-hamburger" aria-label="メニューの開閉ボタン">
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+            </button>
+            <div class="l-header__wrapper js-nav">
+                <img src="/assets/images/header_bg.png" alt="" class="u-pc l-header__bg">
+                <img src="/assets/images/header_bg_sp.png" alt="" class="u-sp l-header__bg">
+                <div class="l-header__wrapper--inner">
+                    <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+                    <p class="l-header__name">SKYLAB株式会社</p>
+                    <nav class="l-header__nav">
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">サービス</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンサルティング</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">ドローン</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">イベント・講習会</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">会社について</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">会社概要</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">代表挨拶</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンセプト</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">弊社の強み</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">その他</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">採用情報</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="c-mv l-wrapper c-mv__wrapper">
+            <div class="c-mv__inner">
+                <img src="/assets/images/training_mv.png" alt="" class="c-mv__images u-pc">
+                <img src="/assets/images/training_mv_sp.png" alt="" class="c-mv__images u-sp">
+                <div class="c-mv__heading">
+                    <h1 class="c-mv__title">教育・研修</h1>
+                    <p class="c-mv__en">Training</p>
+                </div>
+                <div class="c-breadcrumb">
+                    <a href="/" class="c-breadcrumb__link">HOME</a>
+                    <a href="#" class="c-breadcrumb__link">教育・研修</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="l-section-sm">
+            <div class="l-wrapper">
+                <div class="p-training-top">
+                    <p class="p-training-top__lead">SKY LABでは、会社様向けにCPDS講習会と現場研修会を実施しております。<br>
+                        建設業での知識や経験を活かした講習内容となっております。<br>
+                        新人研修や社内の技術向上のために、ぜひご活用ください。<br>
+                        ご希望の会社様はお気軽にお問い合わせください。</p>
+                    <h2 class="p-training-top__title">こんな効果が期待できます。</h2>
+                    <div class="p-training-top__list">
+                        <div class="p-training-top__item">
+                            <img src="/assets/images/training_effect01.svg" alt="" class="p-training-top__icon">
+                            <p class="p-training-top__text">内製化</p>
+                        </div>
+                        <div class="p-training-top__item">
+                            <img src="/assets/images/training_effect02.svg" alt="" class="p-training-top__icon">
+                            <p class="p-training-top__sub">技術力</p>
+                            <p class="p-training-top__text">向上</p>
+                        </div>
+                        <div class="p-training-top__item">
+                            <img src="/assets/images/training_effect03.svg" alt="" class="p-training-top__icon">
+                            <p class="p-training-top__sub">若い人の</p>
+                            <p class="p-training-top__text">教育</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-training">
+                    <h2 class="p-training__title">CPDS講習会</h2>
+                    <p class="p-training__lead">CPDS講習会（継続的専門能力開発システム講習会）は、建設業に従事する技術者のスキル向上と知識の最新化を支援するための講習会です。<br>
+                        国土交通省および多くの地方自治体が公共工事の発注の際に業者選定のひとつの要素となっています。<br>
+                        技術者としての専門的能力を維持・向上させるために定期的に講習会等を受講し、その受講履歴をもって自らの技能の水準を証明するものです。</p>
+                    
+                    <div class="p-training__slider">
+                        <div class="js-cpdsSlider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev js-cpdsSlider-prev"></div>
+                        <div class="swiper-button-next js-cpdsSlider-next"></div>
+                    </div>
+                </div>
+
+                <div class="p-training">
+                    <h2 class="p-training__title">現場研修会</h2>
+                    <p class="p-training__lead">現場研修会は、技術者が実際の作業現場で必要なスキルや知識を実践的に習得するための研修です。<br>
+                        机上の学びだけでなく、現場特有の課題や条件に対応できる力を養うことを目的とし、リアルな環境での体験を通じて技術の向上が図られます。<br>
+                        また、先輩技術者の指導やフィードバックを受けながら、即戦力として活躍できるスキルを身につける機会となり、現場での課題解決力も強化されます。</p>
+                    
+                    <div class="p-training__slider">
+                        <div class="js-onsiteSlider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/training_dummy.png" alt="">
+                                    <p class="p-training__date">2024.11.30</p>
+                                    <p class="p-training__name">講習会名</p>
+                                    <p class="p-training__detail">イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容イベント内容内容イベント内容内容イベント内容内容イベント内容内容イベント内容</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev js-onsiteSlider-prev"></div>
+                        <div class="swiper-button-next js-onsiteSlider-next"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
