@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/hamburger.js" defer></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+
+            <button class="l-header__button js-hamburger" aria-label="メニューの開閉ボタン">
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+                <span class="l-header__line"></span>
+            </button>
+            <div class="l-header__wrapper js-nav">
+                <img src="/assets/images/header_bg.png" alt="" class="u-pc l-header__bg">
+                <img src="/assets/images/header_bg_sp.png" alt="" class="u-sp l-header__bg">
+                <div class="l-header__wrapper--inner">
+                    <img src="/assets/images/logo.svg" alt="SKYLAB" class="l-header__logo">
+                    <p class="l-header__name">SKYLAB株式会社</p>
+                    <nav class="l-header__nav">
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">サービス</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンサルティング</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">ドローン</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">イベント・講習会</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">会社について</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">会社概要</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">代表挨拶</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">コンセプト</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">弊社の強み</a></li>
+                        </ul>
+                        <ul class="l-header__list">
+                            <li class="l-header__item l-header__heading"><a href="#" class="l-header__link">その他</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">採用情報</a></li>
+                            <li class="l-header__item"><a href="#" class="l-header__link">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="p-drone">
+            <div class="c-mv l-wrapper c-mv__wrapper">
+                <div class="c-mv__inner">
+                    <img src="/assets/images/drone_mv.png" alt="" class="c-mv__images u-pc">
+                    <img src="/assets/images/drone_mv_sp.png" alt="" class="c-mv__images u-sp">
+                    <div class="c-mv__heading">
+                        <h1 class="c-mv__title">ドローン事業</h1>
+                        <p class="c-mv__en">Drone</p>
+                    </div>
+                    <div class="c-breadcrumb">
+                        <a href="/" class="c-breadcrumb__link">HOME</a>
+                        <a href="#" class="c-breadcrumb__link">ドローン事業</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="l-section-sm p-drone__about">
+                <div class="l-wrapper">
+                    <div class="c-heading">
+                        <p class="c-heading__en">Company</p>
+                        <h2 class="c-heading__title">会社について</h2>
+                    </div>
+
+                    <div class="p-drone__about--wrapper">
+                        <div class="p-drone__media p-drone__media01">
+                            <div class="p-drone__images">
+                                <img src="/assets/images/drone_about01.png" alt="">
+                            </div>
+                            <div class="p-drone__body">
+                                <h3 class="p-drone__media--title">3次元計測</h3>
+                                <p class="p-drone__media--text">ドローンに搭載された高精度のカメラやLiDAR（光検出と距離測定）センサーによって、現場の地形や構造物の詳細な画像や距離データを取得します。これらのデータを元に、専用のソフトウェアで3次元モデルを作成し、計測や設計に活用されます。</p>
+                                <div class="c-button p-drone__button">
+                                    <a href="#" class="c-button__link c-button__link--right">計測の流れを見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-drone__media p-drone__media02">
+                            <div class="p-drone__images">
+                                <img src="/assets/images/drone_about02.png" alt="">
+                            </div>
+                            <div class="p-drone__body">
+                                <h3 class="p-drone__media--title">ドローン運搬</h3>
+                                <p class="p-drone__media--text">小型・中型ドローンを使用することで、交通の制約がある地域や山間部、離島など、アクセスが困難な場所へも効率的に物資を届けることが可能になります。<br>
+                                    <br>
+                                    弊社では基本的に建設資材等の運搬を行っております。<br>
+                                    また、以前のイベントでカレーの運搬を試みたことがありますが、運搬費を含めると1杯あたり約1万円のコストがかかってしまい、現状では商業ベースでの実現はまだ難しい状況です。<br>
+                                    <br>
+                                    今後幅広い用途でドローン運搬技術を使用できるように、コスト効率や安全性の向上に努め、多様なニーズに応えるサービス展開を目指します。</p>
+                            </div>
+                        </div>
+                        <div class="p-drone__media p-drone__media03">
+                            <div class="p-drone__images">
+                                <img src="/assets/images/drone_about03.png" alt="">
+                            </div>
+                            <div class="p-drone__body">
+                                <h3 class="p-drone__media--title">ドローンを使った子供向けイベントへの参加</h3>
+                                <p class="p-drone__media--text">弊社では、子供たち向けに小型のドローンを使用したドローンゲームを提供しています。お菓子釣りやサッカーなど、楽しみながらドローン操作を学べるアクティビティを通じて、子供たちの興味を引き、創造力や協調性を育んでいます。ドローンの操作をゲーム感覚で体験できることで、テクノロジーへの親しみや、将来の可能性を広げるきっかけとなることを目指しています。</p>
+                            </div>
+                        </div>
+                        <div class="p-drone__media p-drone__media04">
+                            <div class="p-drone__images">
+                                <img src="/assets/images/drone_about04.png" alt="">
+                            </div>
+                            <div class="p-drone__body">
+                                <h3 class="p-drone__media--title">空中散布</h3>
+                                <p class="p-drone__media--text">ドローンによる空中散布は、広範囲の農地や作業現場に対して効率的かつ均等に薬剤や肥料を撒布できる最新技術です。従来の手作業や大型機械の散布に比べ、ドローンは小回りが利き、狭いエリアや斜面でも正確に作業が行えるため、作業時間やコストの削減が期待できます。<br>
+                                    また、GPSやセンサー技術と組み合わせることで、散布精度が向上し、環境への影響も最小限に抑えられます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section p-drone__step">
+                <div class="l-wrapper-sm">
+                    <h2 class="p-drone__step--lead">ICT技術の活用事例</h2>
+
+                    <div class="p-drone__step--item">
+                        <p class="p-drone__step--number">01</p>
+                        <div class="p-drone__step--body">
+                            <h3 class="p-drone__step--title">3次元起工計測</h3>
+                            <p class="p-drone__step--text">3次元起工計測は、ドローンを使用して地形や現場の詳細な3Dデータを収集する技術です。従来の計測方法に比べて、ドローンを活用することで、広範囲かつ迅速に計測を行うことができ、精度の高い3次元の地形モデルを作成します。これにより、現場の状況をリアルタイムで把握し、設計や施工計画に役立てることができます。</p>
+                        </div>
+                        <img src="/assets/images/drone_step01.jpg" alt="" class="p-drone__step--images">
+                    </div>
+                    <img src="/assets/images/drone_arrow.png" alt="" class="p-drone__step--arrow">
+                    <div class="p-drone__step--item">
+                        <p class="p-drone__step--number">02</p>
+                        <div class="p-drone__step--body">
+                            <h3 class="p-drone__step--title">ICT建設機械セットアップ</h3>
+                            <p class="p-drone__step--text">ICT（情報通信技術）建設機械セットアップは、ドローンで得た3Dデータを基に、建設機械に取り付けられた自動制御システムを活用して、施工精度を高める技術です。ドローンで収集した地形情報や設計データをもとに、建設機械の位置や作業内容をリアルタイムで調整することができ、効率的かつ精密な作業が可能となります。</p>
+                        </div>
+                        <img src="/assets/images/drone_step02.jpg" alt="" class="p-drone__step--images">
+                    </div>
+                    <img src="/assets/images/drone_arrow.png" alt="" class="p-drone__step--arrow">
+                    <div class="p-drone__step--item">
+                        <p class="p-drone__step--number">03</p>
+                        <div class="p-drone__step--body">
+                            <h3 class="p-drone__step--title">3次元出来形計測・検査</h3>
+                            <p class="p-drone__step--text">3次元出来形計測・検査は、ドローンによって現場の完成状態を3Dで計測し、設計通りに施工が行われているかを確認する技術です。ドローンで撮影した3Dデータを使用して、出来形の誤差を計測し、施工ミスや品質の問題を早期に発見することができます。これにより、施工の精度を確保し、品質管理が向上します。</p>
+                        </div>
+                        <img src="/assets/images/drone_step03.jpg" alt="" class="p-drone__step--images">
+                    </div>
+                    <img src="/assets/images/drone_arrow.png" alt="" class="p-drone__step--arrow">
+                    <div class="p-drone__step--item">
+                        <p class="p-drone__step--number">04</p>
+                        <div class="p-drone__step--body">
+                            <h3 class="p-drone__step--title">データ納品</h3>
+                            <p class="p-drone__step--text">ドローンで取得したデータは、CADソフトウェアや専用のアプリケーションで解析・編集可能な形式で提供され、設計や施工のための必要データを作成します。<br>
+                                電子納品により、納品後の維持・管理の煩雑さを軽減でき、効率的な作業を実現します。</p>
+                        </div>
+                        <img src="/assets/images/drone_step04.jpg" alt="" class="p-drone__step--images">
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-cta">
+                <div class="l-wrapper-sm l-cta__wrapper">
+                    <div class="c-heading l-cta__heading">
+                        <p class="c-heading__en">Contact</p>
+                        <h2 class="c-heading__title">お問い合わせ</h2>
+                    </div>
+                    <div class="c-button l-cta__button">
+                        <a href="#" class="c-button__link c-button__link--white">お問い合わせフォーム</a>
+                    </div>
+                    <div class="l-cta__information">
+                        <p class="l-cta__information--text">お電話からはこちら</p>
+                        <a href="#" class="l-cta__information--link">0790-23-2727</a>
+                        <p class="l-cta__information--date">受付時間　9:00〜17:00　定休日：日・祝</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
