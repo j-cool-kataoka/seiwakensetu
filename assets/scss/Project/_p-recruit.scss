@@ -1,0 +1,420 @@
+@use "../Global/" as *;
+
+.p-recruit {
+    margin-top: 75px;
+
+    @include MQ(md) {
+        margin-top: 50px;
+    }
+}
+
+.p-recruit-intro {
+    display: flex;
+    align-items: center;
+
+    @include MQ(lg) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.p-recruit-intro__image {
+    flex-shrink: 0;
+    width: 500px;
+
+    @include MQ(md) {
+        width: 250px;
+        margin-left: -24px;
+    }
+}
+
+.p-recruit-intro__body {
+    width: 600px;
+    margin-left: -50px;
+
+    @include MQ(lg) {
+        width: 100%;
+        margin-left: auto;
+        padding-left: 60px;
+        margin-top: -96px;
+    }
+
+    @include MQ(md) {
+        margin-top: -125px;
+    }
+}
+
+.p-recruit-intro__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 50px;
+
+    @include MQ(xxl) {
+        font-size: rem(30);
+    }
+
+    @include MQ(lg) {
+        margin-bottom: 30px;
+    }
+
+    @include MQ(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-recruit-intro__text {
+    font-size: rem(16);
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(12);
+    }
+
+    ~ * {
+        margin-top: 28.8px;
+
+        @include MQ(md) {
+            margin-top: 21.6;
+        }
+    }
+}
+
+.p-recruit-intro__strong {
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-recruit-detail {
+    margin-top: 150px;
+
+    @include MQ(md) {
+        margin-top: 75px;
+    }
+}
+
+.p-recruit-detail__inner {
+
+}
+
+.p-recruit-detail__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    text-align: center;
+    color: var(--blue);
+
+    @include MQ(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-recruit-detail__list {
+    margin-top: 75px;
+    display: flex;
+    column-gap: 40px;
+
+    @include MQ(xl) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    @include MQ(md) {
+        margin-top: 50px;
+    }
+}
+
+.p-recruit-detail__item {
+    width: calc(100% / 2 - 35px / 2);
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    padding-left: 50px;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include MQ(xxl) {
+        padding-left: 30px;
+    }
+
+    @include MQ(xl) {
+        width: 100%;
+        max-width: 990px;
+    }
+
+    @include MQ(md) {
+        flex-direction: column;
+        padding-left: 0;
+    }
+}
+
+.p-recruit-detail__content {
+    flex-shrink: 2;
+    padding-block: 20px;
+
+    @include MQ(md) {
+        padding-block: 30px 10px;
+        padding-inline: 20px;
+    }
+}
+
+.p-recruit-detail__heading {
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include MQ(xxl) {
+        font-size: rem(20);
+    }
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-recruit-detail__sub {
+    font-size: rem(20);
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include MQ(xxl) {
+        font-size: rem(18);
+    }
+
+    @include MQ(md) {
+        font-size: rem(14);
+    }
+}
+
+.p-recruit-detail__text {
+    margin-top: 20px;
+    font-size: rem(16);
+    letter-spacing: 0;
+
+    @include MQ(xxl) {
+        font-size: rem(14);
+    }
+
+    @include MQ(md) {
+        font-size: rem(12);
+    }
+}
+
+.p-recruit-detail__image {
+    flex-shrink: 1;
+    width: 350px;
+    height: 100%;
+
+    @include MQ(md) {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center left;
+
+        @include MQ(md) {
+            height: auto;
+            object-fit: unset;
+        }
+    }
+}
+
+.p-recruit-interview {
+    margin-top: 236px;
+    position: relative;
+
+    @include MQ(md) {
+        margin-top: 136px;
+    }
+}
+
+.p-recruit-interview__inner {
+    max-width: 990px;
+    margin-inline: auto;
+}
+
+.p-recruit-interview__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    color: var(--blue);
+
+    @include MQ(md) {
+        font-size: rem(24);
+        padding-left: 168px;
+    }
+
+    @media screen and (max-width: 390px) {
+        padding-left: 0;
+        text-align: right;
+    }
+}
+
+.p-recruit-interview__label {
+    font-family: $font-family-sorts;
+    font-size: rem(128);
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: rgba(1, 31, 97, 0.1);
+    position: absolute;
+    top: -118px;
+    left: 24px;
+
+
+    @include MQ(md) {
+        font-size: rem(64);
+        top: -54px;
+        left: 16px;
+    }
+}
+
+.p-recruit-interview__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 35px;
+
+    @include MQ(md) {
+        margin-top: 50px;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+.p-recruit-interview__item {
+    width: 50%;
+    max-width: 420px;
+
+    @include MQ(md) {
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    &:first-child {
+        margin-top: 150px;
+
+        @include MQ(md) {
+            margin-top: 0;
+        }
+    }
+}
+
+.p-recruit-interview__image {
+    position: relative;
+}
+
+.p-recruit-interview__name {
+    width: 210px;
+    font-size: rem(24);
+    font-weight: 500;
+    letter-spacing: 0;
+    background-color: var(--white);
+    padding: 14px 20px;
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+
+    @include MQ(md) {
+        width: 140px;
+        font-size: rem(16);
+        padding: 12px 20px;
+        bottom: 56px;
+    }
+}
+
+.p-recruit-interview__text {
+    margin-top: 25px;
+    font-size: rem(16);
+    font-weight: 500;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(12);
+    }
+}
+
+.p-recruit-requirements {
+    margin-top: 150px;
+
+    @include MQ(md) {
+        margin-top: 75px;
+    }
+}
+
+.p-recruit-requirements__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    text-align: center;
+    color: var(--blue);
+
+    @include MQ(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-recruit-requirements__list {
+    margin-top: 75px;
+
+    @include MQ(md) {
+        margin-top: 50px;
+    }
+}
+
+.p-recruit-requirements__item {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    column-gap: 40px;
+    padding: 30px 35px;
+    border-bottom: 1px solid var(--gray);
+
+    @include MQ(lg) {
+        grid-template-columns: 164px 1fr;
+        padding: 30px 20px;
+    }
+
+    @include MQ(md) {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 5px;
+        padding: 15px;
+    }
+
+    &:first-of-type {
+        border-top: 1px solid var(--gray);
+    }
+}
+
+.p-recruit-requirements__heading {
+    font-size: rem(16);
+    font-weight: 700;
+
+    @include MQ(md) {
+        font-size: rem(12);
+        line-height: 1.8;
+    }
+}
+
+.p-recruit-requirements__body {
+    font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+
+    @include MQ(md) {
+        font-size: rem(12);
+        line-height: 1.8;
+    }
+}
+
