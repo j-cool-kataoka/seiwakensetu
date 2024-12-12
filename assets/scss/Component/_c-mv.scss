@@ -6,7 +6,6 @@
     &__inner {
         background-color: var(--dark-blue);
         margin-right: calc(50% - 50vw);
-        padding-right: 80px;
         border-radius: 0 0 0 50px;
 
         @include MQ(md) {

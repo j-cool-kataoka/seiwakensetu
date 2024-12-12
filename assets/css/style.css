@@ -954,7 +954,6 @@ input[type=checkbox]:not(:checked) {
 .c-mv__inner {
   background-color: var(--dark-blue);
   margin-right: calc(50% - 50vw);
-  padding-right: 80px;
   border-radius: 0 0 0 50px;
 }
 @media screen and (max-width: 768px) {
