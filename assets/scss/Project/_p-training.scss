@@ -148,6 +148,18 @@
         padding-inline: 20px;
     }
 
+    .swiper:not(.swiper-initialized) {
+        
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .swiper-slide {
+            width: 33.333%;
+        }
+    }
+
     .swiper-slide {
         background: rgba(1, 31, 97, 0.1);
         padding: 30px;
