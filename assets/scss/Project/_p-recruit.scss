@@ -48,8 +48,11 @@
     font-family: $font-family-serif;
     font-size: rem(32);
     font-weight: 600;
+    line-height: 1.5;
     color: var(--blue);
     margin-bottom: 50px;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
 
     @include MQ(xxl) {
         font-size: rem(30);
@@ -157,7 +160,6 @@
 }
 
 .p-recruit-detail__content {
-    flex-shrink: 2;
     padding-block: 20px;
 
     @include MQ(md) {
@@ -209,9 +211,13 @@
 }
 
 .p-recruit-detail__image {
-    flex-shrink: 1;
+    flex-shrink: 0;
     width: 350px;
     height: 100%;
+
+    @include MQ(xxl) {
+        width: 250px;
+    }
 
     @include MQ(md) {
         width: 100%;

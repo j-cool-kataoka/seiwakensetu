@@ -22,7 +22,6 @@ h2 {
 
 html {
   font-size: $basefontsize + px;
-  font-family: $font-family;
   font-weight: 500;
 
   @include MQ(md) {
@@ -31,7 +30,9 @@ html {
 }
 
 body {
+  font-family: $font-family;
   color: var(--black);
+  overflow-x: hidden;
 }
 
 ul {
@@ -51,8 +52,14 @@ a {
   text-decoration: none;
 }
 
+a > p {
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
 a:hover {
   opacity: .6;
+  text-decoration: none;
   transition: all .5s
 }
 
@@ -111,4 +118,7 @@ input[type="checkbox"]:not(:checked) {
   border: 1px solid var(--blue);
 }
 
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
