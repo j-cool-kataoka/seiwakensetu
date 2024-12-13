@@ -215,6 +215,10 @@
             font-size: rem(14);
         }
 
+        &:hover {
+            color: var(--white);
+        }
+
         &::before {
             content: '';
             display: inline-block;
