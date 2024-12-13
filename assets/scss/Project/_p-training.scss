@@ -1,0 +1,244 @@
+@use "../Global/" as *;
+
+.p-training-top {
+    max-width: 870px;
+    margin-top: 75px;
+    margin-inline: auto;
+
+    @include MQ(md) {
+        margin-top: 50px;
+    }
+}
+
+.p-training-top__lead {
+    font-size: rem(24);
+    letter-spacing: 0;
+    text-align: center;
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-training-top__title {
+    margin-top: 75px;
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    text-align: center;
+
+    @include MQ(md) {
+        margin-top: 50px;
+        font-size: rem(24);
+    }
+}
+
+.p-training-top__list {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+
+    @include MQ(md) {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+.p-training-top__item {
+    width: 30%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include MQ(md) {
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+.p-training-top__icon {
+    height: 90px;
+    width: auto;
+    margin-bottom: 15px;
+
+    @include MQ(md) {
+        height: 60px;
+        margin-bottom: 5px;
+    }
+}
+
+.p-training-top__text {
+    font-size: rem(32);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--white);
+
+    @include MQ(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-training-top__sub {
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--white);
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-training {
+    margin-top: 150px;
+
+    @include MQ(md) {
+        margin-top: 75px;
+    }
+}
+
+.p-training__title {
+    font-family: $font-family-serif;
+    font-size: rem(32);
+    font-weight: 600;
+    text-align: center;
+
+    @include MQ(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-training__lead {
+    max-width: 800px;
+    margin-top: 75px;
+    margin-inline: auto;
+    font-size: rem(16);
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        margin-top: 30px;
+        font-size: rem(12);
+    }
+}
+
+.p-training__slider {
+    max-width: 1500px;
+    padding-inline: 100px;
+    margin-top: 50px;
+    margin-inline: auto;
+    position: relative;
+
+    @include MQ(xl) {
+        padding-inline: 50px;
+    }
+
+    @include MQ(md) {
+        margin-top: 30px;
+        padding-inline: 20px;
+    }
+
+    .swiper:not(.swiper-initialized) {
+        
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .swiper-slide {
+            width: 33.333%;
+        }
+    }
+
+    .swiper-slide {
+        background: rgba(1, 31, 97, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+
+        @include MQ(md) {
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    .swiper-button-prev {
+        width: 38px;
+        height: 42px;
+        background: rgba(1, 31, 97, 0.7);
+        clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        @include MQ(md) {
+            width: 18px;
+            height: 25px;
+            left: -10px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        width: 38px;
+        height: 42px;
+        background: rgba(1, 31, 97, 0.7);
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        @include MQ(md) {
+            width: 18px;
+            height: 25px;
+            right: -10px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.p-training__date {
+    margin-top: 20px;
+    font-size: rem(16);
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(12);
+    }
+}
+
+.p-training__name {
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-training__detail {
+    margin-top: 10px;
+    font-size: rem(16);
+    letter-spacing: 0;
+
+    @include MQ(md) {
+        font-size: rem(12);
+    }
+}
